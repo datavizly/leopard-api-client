@@ -13,6 +13,22 @@
 
 const Requestor = require('./lib/_requestor');
 const Account = require('./lib/Account');
+const Verification = require('./lib/Verification');
+const Customer = require('./lib/Customer');
+const Contact = require('./lib/Contact');
+const Weibo = require('./lib/Weibo');
+const BankAccount = require('./lib/BankAccount');
+const SalesPlan = require('./lib/SalesPlan');
+const Department = require('./lib/Department');
+const CustomerIncomeExpenditure = require('./lib/CustomerIncomeExpenditure');
+const WeiboRecharge = require('./lib/WeiboRecharge');
+const CustomerRecharge = require('./lib/CustomerRecharge');
+const CustomerBalance = require('./lib/CustomerBalance');
+const WeiboIncomeExpenditure = require('./lib/WeiboIncomeExpenditure');
+const WeiboBalance = require('./lib/WeiboBalance');
+const Group = require('./lib/Group');
+const OperationDaily = require('./lib/OperationDaily');
+const Common = require('./lib/Common');
 /**
  * 
  *
@@ -39,6 +55,22 @@ module.exports = function(baseUrl, opts) {
   };
 
   client.account = new Account(requestor);
+  client.verification = new Verification(requestor);
+  client.customer = new Customer(requestor);
+  client.contact = new Contact(requestor);
+  client.weibo = new Weibo(requestor);
+  client.bankAccount = new BankAccount(requestor);
+  client.salesPlan = new SalesPlan(requestor);
+  client.department = new Department(requestor);
+  client.customerIncomeExpenditure = new CustomerIncomeExpenditure(requestor);
+  client.weiboRecharge = new WeiboRecharge(requestor);
+  client.customerRecharge = new CustomerRecharge(requestor);
+  client.customerBalance = new CustomerBalance(requestor);
+  client.weiboIncomeExpenditure = new WeiboIncomeExpenditure(requestor);
+  client.weiboBalance = new WeiboBalance(requestor);
+  client.group = new Group(requestor);
+  client.operationDaily = new OperationDaily(requestor);
+  client.common = new Common(requestor);
 
   return client;
 };

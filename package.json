@@ -2,7 +2,7 @@
   "name": "leopard-api-client",
   "version": "1.0.0",
   "description": "",
-  "spec": "http://localhost:3000/explorer/swagger.json",
+  "spec": "http://localhost:3005/explorer/swagger.json",
   "main": "./index",
   "author": "yifeng002 <493788939lizhaogai@163.com>",
   "repository": {
